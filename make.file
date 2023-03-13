@@ -1,0 +1,6 @@
+abs_main.o:  _abs_main.c
+gcc -c abs_main.c
+abs_func.o: abs_func.c
+gcc -c abs_func.c
+abs2: abs_main.o abs_func.o
+gcc abs_main.o abs_func.o -o abs2
